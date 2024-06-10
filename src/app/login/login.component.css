@@ -1,0 +1,25 @@
+
+
+.card{
+width: 45%;
+height: 50%;
+margin-top: 100px;
+margin-left: 20%;
+
+}
+h1{
+    color: #40c764;
+    text-align: center;
+}
+label{
+    color: blue;
+}
+a{
+    color: red;
+}
+
+.round{
+   width: 35%;
+   height: 50%;
+   margin-left: 30%;
+}

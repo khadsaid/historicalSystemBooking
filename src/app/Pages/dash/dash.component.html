@@ -1,0 +1,52 @@
+<div class="dashboard">
+  <!-- Left Navigation Drawer -->
+  <div class="left-navigation">
+    <div class="logo-container">
+      <div class="logo">
+        <img src="../../../assets/logo-removebg-preview (2).png" alt="Logo">
+      </div>
+      <hr>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a routerLink="./dashboard" routerLinkActive="active">
+            <mat-icon>dashboard</mat-icon> Dashboard
+          </a>
+        </li>
+        <li>
+          <a routerLink="./maps" routerLinkActive="active">
+            <mat-icon>map</mat-icon> Maps
+          </a>
+        </li>
+        <li>
+          <a href="#" (click)="toggleDropdown($event)">
+            <mat-icon>book</mat-icon> Booking <mat-icon>expand_more</mat-icon>
+          </a>
+          <ul class="submenu" [class.show]="dropdownVisible">
+            <li><a routerLink="./form"><mat-icon>school</mat-icon> School</a></li>
+            <li><a routerLink="./private_groups"><mat-icon>group</mat-icon> Private Groups</a></li>
+          </ul>
+        </li>
+        <li>
+          <a routerLink="./sites" routerLinkActive="active">
+            <mat-icon>place</mat-icon> Site
+          </a>
+        </li>
+        <li>
+          <a routerLink="./settings" routerLinkActive="active">
+            <mat-icon>settings</mat-icon> Setting
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <img src="../../../assets/logo-removebg-preview (2).png" alt="Logo" class="logo">
+      <div class="header-title">ZANZIBAR HISTORICAL SITE</div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

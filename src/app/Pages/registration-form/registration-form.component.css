@@ -1,0 +1,16 @@
+
+
+.card{
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: 20%;
+    
+    }
+    h1{
+        color: #106d26;
+        text-align: center;
+    }
+ label{
+    color: #1850b1;
+ }

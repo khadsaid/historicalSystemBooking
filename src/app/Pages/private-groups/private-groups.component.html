@@ -1,0 +1,41 @@
+<mat-card class="private-group-card">
+    <mat-toolbar color="primary">
+      <span>Private Groups</span>
+      <span class="spacer"></span>
+      <button class="btn btn-primary" (click)="onAddShool()" > Add visitor
+     
+      </button>
+
+    </mat-toolbar>
+</mat-card>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+          <th>Group Name</th>
+          <th>Group Addres</th>
+          <th>Group Type</th>
+          <th>Number of visitor</th>
+          <th>Phone Number</th>
+          <th>Date</th>
+          <th>Action</th>
+          </tr>
+          
+        </thead>
+        <tbody>
+          <tr *ngFor="let group of privateGroup" >
+          <td>{{group.Id}}</td>
+          <td>{{group.GroupName}}</td>
+          <td>{{group.Address}}</td>
+          <td>{{group.GroupType}}</td>
+          <td>{{group.TotalNumber}}</td>
+          <td>{{group.PhoneNumber}}</td>
+          <td>{{group.Date}}</td>
+          <td><button class="btn btn-primary" >view</button>
+         &nbsp;<button class="btn btn-success">update</button>&nbsp;
+          <button class="btn btn-danger" >delete</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+  

@@ -1,0 +1,49 @@
+
+<mat-card class="private-group-card">
+  <mat-toolbar color="primary">
+    <span>SCHOOL BOOKING</span>
+    <span class="spacer"></span>
+    <button class="btn btn-primary" (click)="onAddShool()" > Add visitor
+     
+    </button>
+
+  </mat-toolbar>
+</mat-card>
+<div class="container mt-5">
+
+ 
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+      <th>School Name</th>
+      <th>School Addres</th>
+      <th>School Type</th>
+      <th>Amount of Teacher</th>
+      <th>Amount of Student</th>
+      <th>Phone Number</th>
+      <th>Date</th>
+      <th>Action</th>
+      </tr>
+      
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let school of schools">
+      <td>{{school.Id}}</td>
+      <td>{{school.schoolName}}</td>
+      <td>{{school.schoolAddress}}</td>
+      <td>{{school.schoolType}}</td>
+      <td>{{school.amountOfTechers}}</td>
+      <td>{{school.amountOfStudents}}</td>
+      <td>{{school.phoneNumber}}</td>
+      <td>{{school.date}}</td>
+
+      <td><button class="btn btn-primary" >view</button>
+     &nbsp;<button class="btn btn-success">update</button>&nbsp;
+      <button class="btn btn-danger" >delete</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

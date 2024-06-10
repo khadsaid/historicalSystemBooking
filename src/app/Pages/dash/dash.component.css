@@ -1,0 +1,121 @@
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Styling for the left navigation */
+.left-navigation {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Ensures the menu takes up the remaining space */
+}
+
+.menu ul li {
+  padding: 10px 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li a .fas {
+  margin-right: 10px;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+  background-color: #575757;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  background-color: #444;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757;
+}
+
+.main-content {
+  margin-left: 250px; /* Same as the width of the left-navigation */
+  padding: 20px;
+  width: calc(100% - 250px); /* Adjusts to the remaining width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add your box shadow here */
+  background-color: white; /* Ensure background color is set */
+  position: relative; /* Ensure it is relative */
+  z-index: 1; /* Set a higher z-index */
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #faf6f6;
+  box-shadow: 20px 24px 18px rgba(24, 30, 209, 0.1); /* Add your box shadow here */
+}
+
+.header .logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 45px;
+  text-shadow: 5px 10px 5px grey;
+}
+
+
+  .submenu {
+    display: none;
+  }
+
+  .submenu.show {
+    display: block;
+  }
+

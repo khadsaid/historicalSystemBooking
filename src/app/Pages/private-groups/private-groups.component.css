@@ -1,0 +1,19 @@
+.private-group-card {
+    margin: 20px;
+    margin-top: 80px;
+  }
+  
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .table-container {
+    padding: 20px;
+  }
+  
+  .mat-elevation-z8 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
